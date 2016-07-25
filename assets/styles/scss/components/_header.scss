@@ -1,0 +1,24 @@
+.main-header {
+  background-color: #fff;
+
+  &__container {
+    padding: 10px 15px;
+
+    nav {
+      margin-top: 5px;
+
+      @media (max-width: $tablet-max) {
+        float: none !important;
+
+        @at-root .pull-left {
+          float: none !important;
+        }
+      }
+    }
+
+    @media (max-width: $tablet-max) {
+      text-align: center;
+      padding-top: 30px;
+    }
+  }
+}
