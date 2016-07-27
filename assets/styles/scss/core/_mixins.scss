@@ -12,3 +12,19 @@
          url('#{$path}.svg##{$svg}') format('svg');
   }
 }
+
+
+// Headings
+@mixin headings($min-font-size: 14px, $step: 6) {
+  $to: 6;
+
+  @for $i from 1 through $to {
+    h#{$i} {
+      @if $to / $i > 1 {
+        font-size: $min-font-size + $step * ($to - $i);
+      } @else {
+        font-size: $min-font-size;
+      }
+    }
+  }
+}

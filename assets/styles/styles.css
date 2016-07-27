@@ -1,3 +1,6 @@
+.text-center {
+  text-align: center; }
+
 @font-face {
   font-family: "Ubuntu";
   font-weight: 400;
@@ -45,6 +48,27 @@ img {
 ul, ol {
   padding-left: 15px; }
 
+h1 {
+  font-size: 44px; }
+
+h2 {
+  font-size: 38px; }
+
+h3 {
+  font-size: 32px; }
+
+h4 {
+  font-size: 26px; }
+
+h5 {
+  font-size: 20px; }
+
+h6 {
+  font-size: 14px; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #60606e; }
+
 .main-header {
   background-color: #fff; }
   .main-header__container {
@@ -71,32 +95,34 @@ ul, ol {
     @media (min-width: 480px) {
       .top-menu .menu-item:last-child {
         margin-right: 0; } }
-  .top-menu a {
-    position: relative;
-    padding: 5px 0;
-    font-weight: 700;
-    color: #60606e;
-    text-transform: uppercase;
-    text-decoration: none; }
-    .top-menu a::after {
-      position: absolute;
-      content: '';
-      top: 50%;
-      left: 0;
-      height: 1px;
-      width: 50%;
-      background-color: #60606e;
-      opacity: 0;
-      -webkit-transition: all .2s ease-in-out;
-      -moz-transition: all .2s ease-in-out;
-      -o-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out; }
-    .top-menu a:hover, .top-menu a:focus {
-      color: #23527c; }
-      @media (min-width: 480px) {
-        .top-menu a:hover::after, .top-menu a:focus::after {
-          background-color: #23527c;
-          top: 0;
-          opacity: 1; } }
+    .top-menu .menu-item a {
+      position: relative;
+      padding: 5px 0;
+      font-weight: 700;
+      color: #60606e;
+      text-transform: uppercase;
+      text-decoration: none; }
+      .top-menu .menu-item a::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 0;
+        height: 1px;
+        width: 50%;
+        background-color: #60606e;
+        opacity: 0;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+      .top-menu .menu-item a:hover, .top-menu .menu-item a:focus {
+        color: #23527c; }
+        @media (min-width: 480px) {
+          .top-menu .menu-item a:hover::after, .top-menu .menu-item a:focus::after {
+            background-color: #23527c;
+            top: 0;
+            opacity: 1; } }
+      [class~="current-menu-item"] a {
+        color: #23527c !important; }
 
 /*# sourceMappingURL=styles.css.map */

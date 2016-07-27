@@ -2,10 +2,10 @@
 
 <section class="container">
     <?php while ( have_posts() ) : the_post(); ?>
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <!-- post has class "page"-->
             <?php the_post_thumbnail(); ?>
-            <header>
-                <?php the_title( '<h1>', '</h1>' ); ?>
+            <header class="page__header">
+                <?php the_title( '<h1 class="text-center">', '</h1>' ); ?>
             </header>
             <main>
                 <?php the_content(); ?>

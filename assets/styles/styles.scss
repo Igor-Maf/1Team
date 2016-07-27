@@ -1,8 +1,13 @@
+// core
 @import "scss/core/vars";
+@import "scss/core/extends";
 @import "scss/core/mixins";
-@import "scss/general";
 
+@import "scss/general";
 
 // components
 @import "scss/components/header";
 @import "scss/components/top-menu";
+
+// pages
+@import "scss/pages/page";
