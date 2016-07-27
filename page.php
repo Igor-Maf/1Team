@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<section class="container">
+<section class="container container--main">
     <?php while ( have_posts() ) : the_post(); ?>
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <!-- post has class "page"-->
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <!-- body has class "page"-->
             <?php the_post_thumbnail(); ?>
-            <header class="page__header">
+            <header>
                 <?php the_title( '<h1 class="text-center">', '</h1>' ); ?>
             </header>
             <main>

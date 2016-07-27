@@ -9,5 +9,8 @@
 @import "scss/components/header";
 @import "scss/components/top-menu";
 
-// pages
-@import "scss/pages/page";
+.container {
+  &--main {
+    padding-top: 1em;
+  }
+}

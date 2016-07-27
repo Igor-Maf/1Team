@@ -4,6 +4,11 @@
   &__container {
     padding: 10px 15px;
 
+    .custom-logo-link {
+      display: inline-block;
+      margin-top: 5px;
+    }
+
     nav {
       margin-top: 5px;
 

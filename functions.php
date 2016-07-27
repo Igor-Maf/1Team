@@ -2,6 +2,7 @@
 
 /** Custom template tags for this theme. */
 require get_template_directory() . '/inc/template-tags.php';
+require get_template_directory() . '/inc/theme-filters.php';
 
 
 if ( ! function_exists( 'ot_setup' ) ) :
@@ -24,13 +25,13 @@ if ( ! function_exists( 'ot_setup' ) ) :
          * Switch default core markup for search form, comment form, and comments
          * to output valid HTML5.
          */
-        add_theme_support( 'html5', array(
+        /* add_theme_support( 'html5', array(
             'comment-list',
             'comment-form',
-//            'search-form',
-//            'gallery',
-//            'caption'
-        ) );
+            'search-form',
+            'gallery',
+            'caption'
+        ) ); */
 
         /* Enable support for custom logo. */
         add_theme_support( 'custom-logo', array(
